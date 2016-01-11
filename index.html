@@ -34,97 +34,23 @@
           <br>
           <br>
           <br>
-          <h4>
-              
-              var loadingNum = 0; <br>
-var loading = setInterval(loadAnim, 7000); <br>
-var size = [window.width,window.height]; <br>
-<br>
-$(document).ready(function(){<br>
-    console.log("Jquery Started Up!");<br>
-});<br>
-<br>
-              <br>
-$(window).resize(function(){<br>
-              <br>
-    window.resizeTo(size[0],size[1]);<br>
-              <br>
-});<br>
-<br>
-              <br>
-function loadAnim(){<br>
-              <br>
-    if($("#loading").css("margin-left") > "10px"){<br>
-              <br>
-        $("#loading").css({<br>
-              <br>
-            "margin-left": "-80%",<br>
-              <br>
-            "transition": "margin-left 7s;"<br>
-              <br>
-        });<br>
-        <br>
-    };<br>
-    <br>
-              <br>
-    if($("#loading").css("margin-left") < "10px"){<br>
-              <br>
-        $("#loading").css({<br>
-              <br>
-            "margin-left": "70%",<br>
-              <br>
-            "transition": "margin-left 7s;"<br>
-              <br>
-        });<br>
-              <br>
-        loadingNum += 1;<br>
-              <br>
-    };<br>
-              <br>
-    if(loadingNum >= 2){<br>
-              <br>
-        $("h3").css({<br>
-              <br>
-            "transition": "visibility 2s;",<br>
-              <br>
-            "visibility": "visible"<br>
-              <br>
-        });<br>
-              <br>
-    }<br>
-              <br>
-    if(loadingNum >= 3){<br>
-              <br>
-        clearInterval(loading);<br>
-              <br>
-        createWindow("http://127.0.0.1:54604/School%20Project/cubeWorld.html", screen.width, screen.height);<br>
-              <br>
-    }<br>
-              <br>
-};<br>
-              <br>
-<br>
-function createWindow(src, width, height){<br>
-              <br>
-    var win = window.open(src, "_new", "width="+width+",height="+height);<br>
-              <br>
-    win.addEventListener("resize", function(){<br>
-              <br>
-        console.log("Resized");<br>
-              <br>
-		win.resizeTo(width, height);<br>
-              <br>
-    });<br>
-              <br>
-};<br>
-              <br>
-              
-              </h4>
+          <img src="http://i.imgur.com/hC71PT3.png">
           <br>
           <br>
           <br>
           <h1>Now that we covered that, press this button down there V</h1>
           <h1 class="derp">This button.</h1>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br><br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="http://i.imgur.com/fwbJN5w.png">
       </div>
     <script src="//code.jquery.com/jquery-1.10.2.js">
     </script>
