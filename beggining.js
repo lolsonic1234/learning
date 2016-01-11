@@ -1,5 +1,9 @@
+var set = setInterval(alertThem, 10000)
+clearInterval(set)
+
+
 $('.derp').click(function(){
-    var set = setInterval(alertThem, 10000)
+    set = setInterval(alertThem, 10000)
     $('h1').css({
         "transition": "font-size 10s, color 10s",
         "color": "red",
@@ -20,8 +24,13 @@ $('.derp').click(function(){
         "color": "red",
         "font-size": "50px"
     })
+    $('body').css({
+        "transition": "background-color 10s",
+        "background-color": "black"
+    })
 });
 
 function alertThem(){
-    alert("This was made using only 27 lines!");
+    alert("This was made using only 33 lines!");
+    clearInterval(set);
 }
